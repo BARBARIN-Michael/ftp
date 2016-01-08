@@ -34,9 +34,10 @@ CP = cp
 
 RM = rm -f
 
+MKDIR ?= mkdir
+
 all: $(NAME)
 
-MKDIR ?= mkdir
 
 obj/%.o: src/%.c $(INC_FILES)
 	$(MKDIR) -p $(dir $@)
@@ -54,16 +55,22 @@ $(DIR_LIB)/libft/libftstream.a:
 $(NAME): $(DIR_LIB)/libftprintf/libftprintf.a $(DIR_LIB)/libftstream/libftstream.a $(DIR_LIB)/libft.a $(OBJS)
 	$(CC) -O3 -o $@ $(OBJS) $(LIB)
 
+libs:
+	$(MAKE) -C $(DIR_LIB)/libft re
+	$(MAKE) -C $(DIR_LIB)/libftprintf re
+	$(MAKE) -C $(DIR_LIB)/libftstream re
 
 clean:
 	$(RM) $(OBJS)
-	$(MAKE) -C $(LIBFT_PATH) clean
-	$(MAKE) -C $(PRINTF_PATH) clean
+	$(MAKE) -C $(DIR_LIB)/libft clean
+	$(MAKE) -C $(DIR_LIB)/libftprintf clean
+	$(MAKE) -C $(DIR_LIB)/libftstream clean
 
 fclean: clean
 	$(RM) $(NAME)
-	$(MAKE) -C $(LIBFT_PATH) fclean
-	$(MAKE) -C $(PRINTF_PATH) fclean
+	$(MAKE) -C $(DIR_LIB)/libft fclean
+	$(MAKE) -C $(DIR_LIB)/libftprintf fclean
+	$(MAKE) -C $(DIR_LIB)/libftstream fclean
 
 re: fclean all
 
