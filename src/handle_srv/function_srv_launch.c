@@ -1,13 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.h                                           :+:      :+:    :+:   */
+/*   function_srv_launch.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbarbari <mbarbari@student.42.fr>          +#+  +:+       +#+        */
+/*   By: barbare <barbare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/08 10:51:27 by mbarbari          #+#    #+#             */
-/*   Updated: 2016/01/08 10:51:28 by mbarbari         ###   ########.fr       */
+/*   Created: 2016/01/11 16:33:51 by barbare           #+#    #+#             */
+/*   Updated: 2016/01/11 17:35:15 by barbare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "env.h"
+#include "cmd.h"
 
+void		launched_function(t_env env, t_cmd cmd)
+{
+	env.
+}

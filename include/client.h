@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   client.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbarbari <mbarbari@student.42.fr>          +#+  +:+       +#+        */
+/*   By: barbare <barbare@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/08 10:51:33 by mbarbari          #+#    #+#             */
-/*   Updated: 2016/01/08 11:26:08 by mbarbari         ###   ########.fr       */
+/*   Created: 2016/01/09 16:20:34 by barbare           #+#    #+#             */
+/*   Updated: 2016/01/09 17:50:34 by barbare          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "server.h"
+#ifndef CLIENT_H
+# define CLIENT_H
 
-static int	loop(t_env env, t_cmd cmd)
-{
 
-}
 
-int			main(int argc, char **argv)
-{
-	unsigned int ret;
-
-	
-	return (ret);
-}
+#endif
